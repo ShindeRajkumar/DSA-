@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 void reverse(int arr[],int size){
-    if(size%2==0){
+    if(size%2==0){          // for even length of Array
     for(int i=0;i<size;i++){
         swap(arr[i],arr[i+1]);
         i=i+1;
     }
     }
-    else{
+    else{          //for odd length of Array
         for(int i=0;i<size-1;i++){
             swap(arr[i],arr[i+1]);
             i++;
@@ -26,10 +26,11 @@ int main(){
     cin>>size;
     int Arr[100];
 cout<<"Enter the elements of Array: ";
+//input the elements of Array 
     for(int i=0;i<size;i++){
         cin>>Arr[i];
     }
-    reverse(Arr,size);
+    reverse(Arr,size);   // fisrt we call the reverse function due to this array will be reversed
     cout<<"print the Reverse Array: ";
-    printarray(Arr,size);
+    printarray(Arr,size);// now we print the reversed Array
 }
