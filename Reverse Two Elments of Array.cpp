@@ -5,7 +5,8 @@ void reverse(int arr[],int size){
     for(int i=0;i<size;i++){
         swap(arr[i],arr[i+1]);
         i=i+1;
-    }
+    }                                                                // for even and odd length you can use
+                                                                       //     if(i+1<size) then swap
     }
     else{          //for odd length of Array
         for(int i=0;i<size-1;i++){
